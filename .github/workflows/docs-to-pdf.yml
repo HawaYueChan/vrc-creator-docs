@@ -38,7 +38,7 @@ jobs:
       run: sleep 30s
       shell: bash
     - run: |
-           npx docs-to-pdf --initialDocURLs="http://localhost:3000/getting-started/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="http://localhost:3000/img/docusaurus.png" --coverTitle="Docusaurus v2"
+           npx docs-to-pdf --initialDocURLs="http://localhost:3000/getting-started/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page"
     - name: Archive code coverage results
       uses: actions/upload-artifact@v4
       with:
